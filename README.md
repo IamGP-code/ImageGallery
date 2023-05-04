@@ -1,2 +1,2 @@
 # ImageGallery
-it's an image gallery
+It's an image gallery, with Expanding cards Effect
