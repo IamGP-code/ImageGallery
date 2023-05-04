@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Muli',sans-serif;
+    background-image: url('https://png.pngtree.com/background/20211217/original/pngtree-black-spotlight-fashion-golden-texture-marble-background-picture-image_1596751.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    overflow: hidden;
+    /* margin: 0; */
+    height: 100vh;
+    /* opacity: 0.7; */
+    z-index: -1;
+}
+
+.imgcontainer{
+display: flex;
+width: 80vw;
+/* opacity: 1; */
+/* height: 80vh; */
+}
+
+.panel{
+    /* background-size: auto 100%; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    object-position: center;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 15px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+.panel.active {
+    /* object-fit: cover; */
+    flex: 5;
+    /* background-size: cover; */
+}
+
+.panel.active h3{
+ /* overflow: hidden; */
+    opacity: 1;   
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width: 480px){
+    .container{
+        width: 100vw;
+    }
+    .panel:nth-of-type(4),.panel:nth-of-type(5){
+        display: none;
+    }
+}
