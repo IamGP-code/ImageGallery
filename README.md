@@ -1,2 +1,2 @@
 # ImageGallery
-##it's an image gallery
+it's an image gallery
